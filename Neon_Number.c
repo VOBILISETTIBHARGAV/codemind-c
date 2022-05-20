@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,sum=0,s,i;
-    scanf("%d",&a);
-    s=a*a;
-    for (i=0; s>=1; i++)
+    int temp,sum=0,m,n;
+    scanf("%d",&n);
+    m=n*n;
+    while(m>0)
     {
-        b=s%10;
-        sum+=b;
-        s=s/10;
+        temp=m%10;
+        sum=sum+temp;
+        m=m/10;
     }
-    if (sum==a)
+    if(sum==n)
     {
         printf("Neon Number");
     }
@@ -18,5 +18,4 @@ int main()
     {
         printf("Not Neon Number");
     }
-    return 0;
 }
