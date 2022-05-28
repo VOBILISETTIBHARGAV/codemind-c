@@ -20,12 +20,12 @@ int prime(int n)
 }
 int main()
 {
-    int a,b,i=1,m;
+    int a,b,x,i=1;
     scanf("%d%d",&a,&b);
-    while(a>0 || b>0)
+    while(a>0 && b>0)
     {
-        m=a+b+i;
-        if(prime(m))
+        x=a+b+i;
+        if(prime(x))
         {
             printf("%d",i);
             break;
