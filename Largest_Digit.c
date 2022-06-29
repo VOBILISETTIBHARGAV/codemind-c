@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,temp=0,max;
+    int n,temp,max;
     scanf("%d",&n);
     max=n%10;
     while(n>0)
@@ -9,9 +9,9 @@ int main()
         temp=n%10;
         if(temp>max)
         {
-            max=temp;
+          max=temp;
         }
         n=n/10;
     }
-    printf("%d",max);
+     printf("%d",max);
 }
