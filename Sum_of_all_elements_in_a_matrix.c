@@ -26,5 +26,4 @@ int main()
         }
     }
     printf("%d",sum+sum1);
-    
 }
