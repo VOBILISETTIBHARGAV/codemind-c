@@ -15,5 +15,4 @@ int main()
 ",sum);
         sum=0;
     }
-    
 }
