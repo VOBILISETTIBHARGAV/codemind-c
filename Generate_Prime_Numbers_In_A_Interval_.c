@@ -24,9 +24,9 @@ int main()
     scanf("%d%d",&a,&b);
     for(a;a<=b;a++)
     {
-       if(primes_range(a)==1)
+        if(primes_range(a)==1)
         {
-          printf("%d
+           printf("%d
 ",a);
         }
         else
