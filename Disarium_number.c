@@ -2,23 +2,23 @@
 #include<math.h>
 int main()
 {
-    int n,count=0,m,k,temp,sum=0;
+    int n,k,m,sum=0,temp,count=0;
     scanf("%d",&n);
+    k=n;
     m=n;
-    k=m;
     while(n>0)
     {
         n=n/10;
         count++;
     }
-    while(m>0)
+    while(k>0)
     {
-        temp=m%10;
+        temp=k%10;
         sum=sum+pow(temp,count);
-        m=m/10;
+        k=k/10;
         count--;
     }
-    if(sum==k)
+    if(sum==m)
     {
         printf("True");
     }
