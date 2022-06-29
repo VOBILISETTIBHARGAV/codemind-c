@@ -8,7 +8,6 @@ int main()
     if(q*q==n)
     {
         printf("True");
-    
     }
     else
     {
