@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,count=0,se;
+    int n,se,count=0;
     scanf("%d",&n);
     int arr[n],i;
     for(i=0;i<n;i++)
@@ -9,12 +9,12 @@ int main()
         scanf("%d",&arr[i]);
     }
     scanf("%d",&se);
-    for(i=0;i<n;i++)
-    {
-        if(arr[i]==se)
-        {
-            count++;
-        }
-    }
-    printf("%d",count);
+     for(i=0;i<n;i++)
+     {
+         if(arr[i]==se)
+         {
+             count++;
+         }
+     }
+     printf("%d",count);
 }
