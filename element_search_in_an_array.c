@@ -1,15 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int size,flag=0,se;
+    int size,se,flag=0;
     scanf("%d",&size);
     int arr[size],i;
     for(i=0;i<size;i++)
     {
         scanf("%d",&arr[i]);
     }
-    scanf("
-%d",&se);
+    scanf("%d",&se);
     for(i=0;i<size;i++)
     {
         if(arr[i]==se)
