@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,count=0,sum=0,a,b,min;
+    int n,count=0,a,b,sum=0,min;
     scanf("%d",&n);
-    int arr[n],i,arr1[100],arr2[100],j=0,k=0;
+    int arr[n],i,arr1[100],arr2[200],k=0,j=0;
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
@@ -23,10 +23,10 @@ int main()
     }
     if(count>0)
     {
-      printf("%d",min);
+        printf("%d",min);
     }
-    else 
+    else
     {
-      printf("-1");
+        printf("-1");
     }
 }
