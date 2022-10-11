@@ -1,36 +1,35 @@
 #include<stdio.h>
 int primes_range(int num)
 {
-    int i,count=0;
+    int i,c=0;
     for(i=1;i<=num;i++)
     {
-      if(num%i==0)
-      {
-        count++;
-      }
+        if(num%i==0)
+        {
+            c++;
+        }
     }
-    if(count<=2)
+    if(c<=2)
     {
         return 1;
     }
-    else
-    {
+    else{
         return 0;
     }
 }
 int main()
 {
-    int n,sum=0,i;
+    int i,n,s=0;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-     if(n%i==0)
-      {
-       if(primes_range(i)==0)
+        if(n%i==0)
         {
-          sum++;
+            if(primes_range(i)==0)
+            {
+                s++;
+            }
         }
-      }
     }
-    printf("%d",sum+1);
+    printf("%d",s+1);
 }
