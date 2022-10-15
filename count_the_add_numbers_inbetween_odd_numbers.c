@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int sum=0,size;
+    int size,sum=0;
     scanf("%d",&size);
     int arr[size],i;
     for(i=0;i<size;i++)
