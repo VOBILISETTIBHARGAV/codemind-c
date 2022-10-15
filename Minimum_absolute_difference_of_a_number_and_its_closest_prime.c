@@ -34,8 +34,7 @@ int main()
         {
             if(abs(n-(n-i))>abs(n-(n+i)))
             {
-             printf("%d
-",abs(n-(n-i)));
+             printf("%d",abs(n-(n-i)));
              break;
             }
             else
@@ -46,14 +45,12 @@ int main()
         }
         else if(palindrome(n+i))
         {
-            printf("%d
-",abs(n-(n+i)));
+            printf("%d",abs(n-(n+i)));
             break;
         }
         else if(palindrome(n-i))
         {
-            printf("%d
-",abs(n-(n-i)));
+            printf("%d",abs(n-(n-i)));
             break;
         }
         i++;
